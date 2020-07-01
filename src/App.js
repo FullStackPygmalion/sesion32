@@ -1,16 +1,18 @@
 import React from 'react';
-import UsoJSX from './components/usoJSX';
+import MiComponenteConClase from './components/miComponenteConClase'
+// import UsoJSX from './components/usoJSX';
 import './css/global.css'
 
-
+let elementos = ['uno', 'dos', 'tres']
 
 function App() {
   return (
     <React.Fragment>
-      <UsoJSX/>
+      {/* <UsoJSX elementos = {elementos}/>
       <div>
         Segundo elemento
-      </div>
+      </div> */}
+      <MiComponenteConClase elementos = {elementos}/>
     </React.Fragment>
   );
 }

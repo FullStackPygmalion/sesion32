@@ -5,7 +5,7 @@ import './css/miComponente.css' // importar estilos de mi componente !Buena Prac
 let clase = 'btn btn-primary'
 const link = 'https://www.google.com'
 
-let elementos = ['uno', 'dos', 'tres']
+
 
  /*   Funcion para manejo de eventos */
 function handleChange(event){
@@ -26,7 +26,7 @@ function UsoJSX (props){
             <button className={clase} >Mi boton principal</button>
             <ul>
                 {/* Mostrar una lista de elementos con map */ }
-                {elementos.map(elm => <li key={elm} >{'hola ' + elm}</li>)}
+                {props.elementos.map(elm => <li key={elm} >{'hola ' + elm}</li>)}
             </ul>
              {/* uso de variables javascript en JSX */}
             <a href={link} target="_BLANK" rel="noopener noreferrer"> Link a google</a>
